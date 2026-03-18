@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
-    <link rel="icon" href="./images/favicon.ico" sizes="32x32">
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" sizes="180x180">
-    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="./images/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/mobile-icon.png"
+      sizes="180x180"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -19,32 +23,42 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
+      <p class="header__rec" aria-hidden="true">REC</p>
+      <nav class="header__theme-menu" aria-label="Переключение темы">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
-              День
+              день
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
+              >
+              неон
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <div class="header__description">
+        <p class="title-decor">
+          Что делать, когда не можешь делать ничего 
+        </p>
+        <p class="title-decor">
+         Или почему нам так сложно сконцентрироваться, особенно когда очень надо 
+        </p>
+      </div>
     </header>
   </body>
 </html>
