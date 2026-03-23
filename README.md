@@ -1,6 +1,8 @@
 # Проект: Сложно сосредоточиться (No Focus)
 
-Репозиторий проекта: [https://github.com/Yulia-Pospelova/slozhno-sosredotochitsya-fd](https://github.com/Yulia-Pospelova/slozhno-sosredotochitsya-fd)
+## Ссылка на проект
+
+https://github.com/Yulia-Pospelova/slozhno-sosredotochitsya-fd
 
 Адаптивный лендинг с динамическим переключением цветовых схем (Dark/Light/Auto).
 
