@@ -5,6 +5,10 @@
   --main-text-color: #f1b2ce;
   --accent-text-color: #000028;
   --secondary-accent-color: #db00ff;
+  --section-title-color: var(--accent-color); 
+  --section-text-color: var(--main-text-color); 
+  --decor-color: var(--accent-color);
+  --menu-button-text-color: var(--accent-color); 
   --bg-image: url(../images/cover-image-dark.png);
   --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-padding: 10px;
@@ -16,6 +20,8 @@
   --section-max-inline-size: 355px;
   --section-title-inline-size: 355px;
   --footer-margin-block-start: 40px;
+  --rec-display: inline-flex;
+  
 }
 
 @media (width >= 768px) {
