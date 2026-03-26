@@ -116,13 +116,15 @@
 }
 
 .title {
-  grid-row: 2;
-  max-inline-size: var(--title-max-inline-size);
-  justify-self: start;
+  font-weight: var(--title-font-weight);
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .header__title {
-  font-weight: 700;
+  grid-row: 2;
+  max-inline-size: var(--title-max-inline-size);
+  justify-self: start;
   font-size: var(--header-title-size);
   line-height: 0.83;
   color: var(--secondary-accent-color);
@@ -139,9 +141,7 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: 700;
+  font-weight: var(--title-font-weight);
 }
 
 .main {
@@ -164,9 +164,6 @@
 .content-section__title {
   max-inline-size: var(--section-title-inline-size);
   color: var(--section-title-color);
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: 700;
 }
 
 .content-section__group {
@@ -203,6 +200,7 @@
 .content-section__subtitle {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
+  font-weight: 400;
 }
 
 .gallery {
@@ -249,7 +247,7 @@
     margin-block: var(--menu-margin-block);
   }
 
-  .title {
+  .header__title {
     max-inline-size: var(--title-max-inline-size);
     margin-inline-start: calc(var(--page-padding) * -1);
     inline-size: calc(100% + var(--page-padding));
@@ -356,7 +354,7 @@
     justify-content: center;
   }
 
-  .title {
+  .header__title {
     max-inline-size: var(--title-max-inline-size);
   }
 
@@ -367,9 +365,8 @@
   .content-section__title {
     max-inline-size: var(--section-title-inline-size);
   }
-  /* Ограничиваем ширину только в текстовых секциях (1 и 3) */
-  .content-section:not(.content-section_theme_factors):not(:last-of-type)
-    .content-section__group {
+
+  .content-section--special .content-section__group {
     inline-size: 649px;
   }
 

@@ -21,6 +21,7 @@
   --header-min-block-size: max(100vh, 668px);
   --main-font-size: 18px;
   --main-line-height: 1.3;
+  --title-font-weight: 700;
   --rec-display: inline-flex;
 }
 
