@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  min-block-size: 100%;
   margin: 0;
 }
 
@@ -30,10 +29,33 @@ ul {
   list-style: none;
 }
 
-button,
 a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  text-decoration: none;
+  color: inherit;
 }
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+button {
+ color: inherit;
+ font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap; 
+  clip-path: inset(100%); 
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+

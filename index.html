@@ -28,8 +28,8 @@
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
-              type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
+              type="button"
               aria-pressed="false"
             >
               день
@@ -37,8 +37,8 @@
           </li>
           <li class="header__theme-menu-item">
             <button
-              type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              type="button"
               disabled
               aria-pressed="true"
             >
@@ -47,8 +47,8 @@
           </li>
           <li class="header__theme-menu-item">
             <button
-              type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
+              type="button"
               aria-pressed="false"
             >
               неон
@@ -82,8 +82,8 @@
               href="https://dana.org/news-and-insights/"
               target="_blank"
               rel="noopener"
-              >выяснили</a
-            >, что мозгу тяжело концентрироваться даже на двух делах
+            >выяснили<span class="visually-hidden">(ссылка откроется в новом окне)</span></a>,
+            что мозгу тяжело концентрироваться даже на двух делах
             одновременно. А когда в поле внимания попадает несколько важных
             задач, организм паникует и выделяет кортизол и адреналин — «гормоны
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
@@ -152,7 +152,7 @@
           5 простых (на самом деле не очень) советов
         </h3>
         <article class="content-section__group">
-          <h4 class="title content-section__subtitle">
+          <h4 class="title-decor content-section__subtitle">
             Представьте небо и облака
           </h4>
           <p class="content-section__text">
@@ -167,7 +167,7 @@
           </p>
         </article>
         <article class="content-section__group">
-          <h4 class="title content-section__subtitle">Включите музыку</h4>
+          <h4 class="title-decor content-section__subtitle">Включите музыку</h4>
           <p class="content-section__text">
             Но не любую, и не любимую. Любимая может быть связана с сильными
             положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -176,7 +176,7 @@
           </p>
         </article>
         <article class="content-section__group">
-          <h4 class="title content-section__subtitle">Прогуляйтесь</h4>
+          <h4 class="title-decor content-section__subtitle">Прогуляйтесь</h4>
           <p class="content-section__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
@@ -184,8 +184,7 @@
               href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
               target="_blank"
               rel="noopener"
-              >показал</a
-            >, что созерцание природы повышает концентрацию, в то время как
+            >показал<span class="visually-hidden">(ссылка откроется в новом окне)</span></a>, что созерцание природы повышает концентрацию, в то время как
             после просмотра городских пейзажей она наоборот понижается. Можно
             совместить прогулку с физическими упражнениями или бегом — так в
             мозг поступит ещё больше кислорода и он будет лучше работать. Но и
@@ -193,7 +192,7 @@
           </p>
         </article>
         <article class="content-section__group">
-          <h4 class="title content-section__subtitle">Хорошо ешьте</h4>
+          <h4 class="title-decor content-section__subtitle">Хорошо ешьте</h4>
           <p class="content-section__text">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
             которые препятствуют резким скачкам сахара в крови. Например, с
@@ -202,7 +201,7 @@
           </p>
         </article>
         <article class="content-section__group">
-          <h4 class="title content-section__subtitle">Читайте</h4>
+          <h4 class="title-decor content-section__subtitle">Читайте</h4>
           <p class="content-section__text">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
             прочитать пост в соцсети, достаточно нескольких минут или даже
@@ -211,40 +210,170 @@
           </p>
         </article>
       </section>
-      <section class="content-section">
+      <section class="content-section content-section--gallery">
         <div class="content-section__group">
           <h3 class="title title-decor">А можно в картинках?</h3>
           <div class="gallery">
-            <img
-              class="card__image"
-              src="./images/sunset.png"
-              alt="Закат над морем"
-              loading="lazy"
-            />
-            <img
-              class="card__image"
-              src="./images/ice-cream.png"
-              alt="Мороженое"
-              loading="lazy"
-            />
-            <img
-              class="card__image"
-              src="./images/tape.png"
-              alt="Кассета"
-              loading="lazy"
-            />
-            <img
-              class="card__image"
-              src="./images/books.png"
-              alt="Книги"
-              loading="lazy"
-            />
-            <img
-              class="card__image"
-              src="./images/street.png"
-              alt="Улица города"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/sunset-375.webp  355w,
+                  ./images/sunset-768.webp  479w,
+                  ./images/sunset-1024.webp 650w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 479px,
+      650px
+    "
+              />
+              <img
+                class="gallery__image"
+                src="./images/sunset-1024.jpg"
+                srcset="
+                  ./images/sunset-375.jpg  355w,
+                  ./images/sunset-768.jpg  479w,
+                  ./images/sunset-1024.jpg 650w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 479px,
+      650px
+    "
+                alt="Закат над морем"
+                fetchpriority="high"
+                decoding="sync"
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/ice-cream-375.webp  355w,
+                  ./images/ice-cream-768.webp  229w,
+                  ./images/ice-cream-1024.webp 314w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 229px,
+      314px
+    "
+              />
+              <img
+                class="gallery__image"
+                src="./images/ice-cream-1024.jpg"
+                srcset="
+                  ./images/ice-cream-375.jpg  355w,
+                  ./images/ice-cream-768.jpg  229w,
+                  ./images/ice-cream-1024.jpg 314w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 229px,
+      314px
+    "
+                alt="Мороженое"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/tape-375.webp  355w,
+                  ./images/tape-768.webp  229w,
+                  ./images/tape-1024.webp 315w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 229px,
+      315px
+    "
+              />
+              <img
+                class="gallery__image"
+                src="./images/tape-1024.jpg"
+                srcset="
+                  ./images/tape-375.jpg  355w,
+                  ./images/tape-768.jpg  229w,
+                  ./images/tape-1024.jpg 315w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 229px,
+      315px
+    "
+                alt="Кассета"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/books-375.webp  355w,
+                  ./images/books-768.webp  230w,
+                  ./images/books-1024.webp 315w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 230px,
+      315px
+    "
+              />
+              <img
+                class="gallery__image"
+                src="./images/books-1024.jpg"
+                srcset="
+                  ./images/books-375.jpg  355w,
+                  ./images/books-768.jpg  230w,
+                  ./images/books-1024.jpg 315w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 230px,
+      315px
+    "
+                alt="Книги"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/street-375.webp  355w,
+                  ./images/street-768.webp  479w,
+                  ./images/street-1024.webp 649w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 479px,
+      649px
+    "
+              />
+              <img
+                class="gallery__image"
+                src="./images/street-1024.jpg"
+                srcset="
+                  ./images/street-375.jpg  355w,
+                  ./images/street-768.jpg  479w,
+                  ./images/street-1024.jpg 649w
+                "
+                sizes="
+      (max-width: 375px) 355px,
+      (max-width: 768px) 479px,
+      649px
+    "
+                alt="Улица города"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>
